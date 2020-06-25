@@ -9,12 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity2 extends AppCompatActivity {
-    Boolean Xturn = true ;
+public class MainActivity extends AppCompatActivity {
+    Boolean Xturn = true;
     int[] Xarray = new int[9];
     int[] oarray = new int[9];
-    TextView P1t ;
-    TextView P2t ;
+    TextView P1t;
+    TextView P2t;
     Button b1;
     Button b2;
     Button b3;
@@ -24,7 +24,6 @@ public class MainActivity2 extends AppCompatActivity {
     Button b7;
     Button b8;
     Button b9;
-
 
 
     @Override
@@ -48,13 +47,12 @@ public class MainActivity2 extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[0] = 1;
                     checkXwin();
                     b1.setText("X");
-                }
-                else {
-                    oarray[0]=1;
+                } else {
+                    oarray[0] = 1;
                     checkowin();
                     b1.setText("O");
 
@@ -64,13 +62,12 @@ public class MainActivity2 extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[1] = 1;
                     checkXwin();
                     b2.setText("X");
-                }
-                else {
-                    oarray[1]=1;
+                } else {
+                    oarray[1] = 1;
                     checkowin();
                     b2.setText("O");
 
@@ -80,13 +77,12 @@ public class MainActivity2 extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[2] = 1;
                     checkXwin();
                     b3.setText("X");
-                }
-                else {
-                    oarray[2]=1;
+                } else {
+                    oarray[2] = 1;
                     checkowin();
                     b3.setText("O");
 
@@ -96,13 +92,12 @@ public class MainActivity2 extends AppCompatActivity {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[3] = 1;
                     checkXwin();
                     b4.setText("X");
-                }
-                else {
-                    oarray[3]=1;
+                } else {
+                    oarray[3] = 1;
                     checkowin();
                     b4.setText("O");
 
@@ -112,13 +107,12 @@ public class MainActivity2 extends AppCompatActivity {
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[4] = 1;
                     checkXwin();
                     b5.setText("X");
-                }
-                else {
-                    oarray[4]=1;
+                } else {
+                    oarray[4] = 1;
                     checkowin();
                     b5.setText("O");
 
@@ -128,13 +122,12 @@ public class MainActivity2 extends AppCompatActivity {
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[5] = 1;
                     checkXwin();
                     b6.setText("X");
-                }
-                else {
-                    oarray[5]=1;
+                } else {
+                    oarray[5] = 1;
                     checkowin();
                     b6.setText("O");
 
@@ -144,13 +137,12 @@ public class MainActivity2 extends AppCompatActivity {
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[6] = 1;
                     checkXwin();
                     b7.setText("X");
-                }
-                else {
-                    oarray[6]=1;
+                } else {
+                    oarray[6] = 1;
                     checkowin();
                     b7.setText("O");
 
@@ -160,13 +152,12 @@ public class MainActivity2 extends AppCompatActivity {
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[7] = 1;
                     checkXwin();
                     b8.setText("X");
-                }
-                else {
-                    oarray[7]=1;
+                } else {
+                    oarray[7] = 1;
                     checkowin();
                     b8.setText("O");
 
@@ -176,13 +167,12 @@ public class MainActivity2 extends AppCompatActivity {
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Xturn){
+                if (Xturn) {
                     Xarray[8] = 1;
                     checkXwin();
                     b9.setText("X");
-                }
-                else {
-                    oarray[8]=1;
+                } else {
+                    oarray[8] = 1;
                     checkowin();
                     b9.setText("O");
 
@@ -192,71 +182,53 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
 
-    public void checkXwin(){
-        Xturn = false ;
+    public void checkXwin() {
+        Xturn = false;
         P1t.setText("");
         P2t.setText("your turn");
-        if (Xarray[0] == 1 && Xarray[1]==1 && Xarray[2] == 1){
+        if (Xarray[0] == 1 && Xarray[1] == 1 && Xarray[2] == 1) {
             P1t.setText("congrats");
-        }
-        else if (Xarray[3] == 1 && Xarray[4]==1 && Xarray[5] == 1){
+        } else if (Xarray[3] == 1 && Xarray[4] == 1 && Xarray[5] == 1) {
             P1t.setText("congrats");
-        }
-        else if (Xarray[6] == 1 && Xarray[7]==1 && Xarray[8] == 1){
+        } else if (Xarray[6] == 1 && Xarray[7] == 1 && Xarray[8] == 1) {
             P1t.setText("congrats");
-        }
-        else if (Xarray[0] == 1 && Xarray[3]==1 && Xarray[6] == 1){
-            P1t.setText("congrats");        }
-        else if (Xarray[1] == 1 && Xarray[4]==1 && Xarray[7] == 1){
+        } else if (Xarray[0] == 1 && Xarray[3] == 1 && Xarray[6] == 1) {
             P1t.setText("congrats");
-        }
-        else if (Xarray[0] == 1 && Xarray[4]==1 && Xarray[8] == 1){
+        } else if (Xarray[1] == 1 && Xarray[4] == 1 && Xarray[7] == 1) {
             P1t.setText("congrats");
-        }
-        else if (Xarray[2] == 1 && Xarray[4]==1 && Xarray[6] == 1){
-            P1t.setText("congrats");();
-        }
-        else{
+        } else if (Xarray[0] == 1 && Xarray[4] == 1 && Xarray[8] == 1) {
+            P1t.setText("congrats");
+        } else if (Xarray[2] == 1 && Xarray[4] == 1 && Xarray[6] == 1) {
+            P1t.setText("congrats");
+        } else {
             P2t.setText("draw");
         }
 
 
-
-
-
     }
+
     public void checkowin() {
         Xturn = true;
         P2t.setText("");
         P1t.setText("your turn");
-        if (oarray[0] == 1 && oarray[1]==1 && oarray[2] == 1){
-           P2t.setText("congrats");
-        }
-        else if (oarray[3] == 1 && oarray[4]==1 && oarray[5] == 1){
+        if (oarray[0] == 1 && oarray[1] == 1 && oarray[2] == 1) {
             P2t.setText("congrats");
-        }
-        else if (oarray[6] == 1 && oarray[7]==1 && oarray[8] == 1){
+        } else if (oarray[3] == 1 && oarray[4] == 1 && oarray[5] == 1) {
             P2t.setText("congrats");
-        }
-        else if (oarray[0] == 1 && oarray[3]==1 && oarray[6] == 1){
+        } else if (oarray[6] == 1 && oarray[7] == 1 && oarray[8] == 1) {
             P2t.setText("congrats");
-        }
-        else if (oarray[1] == 1 && oarray[4]==1 && oarray[7] == 1) {
+        } else if (oarray[0] == 1 && oarray[3] == 1 && oarray[6] == 1) {
             P2t.setText("congrats");
-        }
-        else if (oarray[0] == 1 && oarray[4]==1 && oarray[8] == 1){
+        } else if (oarray[1] == 1 && oarray[4] == 1 && oarray[7] == 1) {
             P2t.setText("congrats");
-        }
-        else if (oarray[2] == 1 && oarray[4]==1 && oarray[6] == 1){
+        } else if (oarray[0] == 1 && oarray[4] == 1 && oarray[8] == 1) {
             P2t.setText("congrats");
+        } else if (oarray[2] == 1 && oarray[4] == 1 && oarray[6] == 1) {
+            P2t.setText("congrats");
+        } else {
+            P2t.setText("draw");
         }
-        else(
-                    P2t.setText("draw");
-                    )
-
-
-
-
 
 
     }
+}
